@@ -6,8 +6,8 @@ export function* load(){
     yield takeLatest(actions.LOAD_REQUEST, function*( ){
         
         try{                 
-            const response = yield call(api.getChannelVideos, 'UCSfwM5u0Kce6Cce8_S72olg');   
-            
+            const response = yield call(api.getChannelVideos, 'UCIUlRznoQ3pjBJBbM9ZNMVg');   
+            //'UCSfwM5u0Kce6Cce8_S72olg'
             yield put({
                 type: actions.LOAD_SUCCESS,
                 payload: response
